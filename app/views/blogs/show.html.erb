@@ -2,5 +2,6 @@
 
 <p>タイトル：<%= @blog.title %></p>
 <P>本文：<%= @blog.content %></P>
+<p>投稿ユーザ：<%= @blog.user.name %></p>
 
 <%= link_to 'ブログ一覧画面に戻る', blogs_path %>
