@@ -1,4 +1,5 @@
 class BlogsController < ApplicationController
+  before_action :must_login, only: [:index, :new, :show, :edit, :update, :destroy]
   before_action :set_blog, only: [:show, :edit, :update, :destroy]
 
   def index
